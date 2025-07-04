@@ -2,20 +2,6 @@
 
 A **functional and sleek stopwatch** created using **HTML**, **CSS**, and **JavaScript** as a project under the **StaxTech Virtual Web Development Internship**. This stopwatch is perfect for learning about DOM manipulation, real-time updates, and building responsive UI with vanilla JavaScript.
 
-## 📸 Screenshots
-
-Here's a preview of the stopwatch:
-
-<table>
-  <tr>
-    <td><img src="https://github.com/user-attachments/assets/c739b560-4760-4096-aa81-613ff659b213" alt="Stopwatch Screenshot" width="400" /></td>
-  </tr>
-</table>
-
-## 🚀 Live Demo
-
-🔗 Try it live now: [STOPWATCH-PROJECT](https://innovativesumit.github.io/STOPWATCH/)
-
 ## 🧩 Key Features
 
 ### ⏳ **Core Functionality**
