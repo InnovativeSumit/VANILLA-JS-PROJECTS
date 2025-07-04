@@ -2,10 +2,6 @@
 
 A **beautiful and feature-rich digital whiteboard** built with **HTML5 Canvas, CSS3, and JavaScript**. This project allows users to draw freely with multiple colors, adjust brush size, erase mistakes, and clear the canvas completely.
 
-## 🖥️ Live Demo
-
-🔗 Try it live: [Interactive Whiteboard](https://innovativesumit.github.io/TAP-BABY-GAME/)
-
 ## ✨ Features
 
 ### 🖌️ **Drawing Tools**
@@ -25,15 +21,6 @@ A **beautiful and feature-rich digital whiteboard** built with **HTML5 Canvas, C
 - **HTML5 Canvas API**: Smooth drawing implementation
 - **Mobile-Ready**: Works on both desktop and touch devices
 - **Clean Code**: Well-commented and structured
-
-## 📸 Screenshots
-
-<table>
-  <tr>
-    <td><img src="https://github.com/user-attachments/assets/1fb2e270-1df1-4ef0-80e8-5e781d6f744a" alt="Whiteboard Interface" width="500" /></td>
-    <td><img src="https://github.com/user-attachments/assets/9a4627b1-2a9a-4500-94e2-ee7a7104c0e7" alt="Drawing Example" width="500" /></td>
-  </tr>
-</table>
 
 ## 📜 License
 
