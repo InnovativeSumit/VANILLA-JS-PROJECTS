@@ -2,13 +2,6 @@
 
 A sleek, **fully responsive calculator** application built using **pure HTML, CSS, and JavaScript**, replicating core physical calculator functions with enhanced digital features and a modern UI.
 
-![CALCULATOR-IMAGES](https://github.com/user-attachments/assets/5abedc94-bf8e-41f2-9b0b-079bcbf72fab)
-
-
-
-## 🚀 Live Demo
-
-🔗 Try it Live:- [CALCULATOR](https://innovativesumit.github.io/CALCULATOR/)
 
 
 ## 🛠️ Technologies Used
