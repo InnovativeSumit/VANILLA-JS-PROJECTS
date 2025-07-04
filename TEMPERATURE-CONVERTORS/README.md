@@ -5,17 +5,6 @@
 This is a simple yet functional **Temperature Converter Web App** built using **HTML, CSS, and JavaScript**.  
 It allows users to convert temperature values between **Celsius**, **Fahrenheit**, and **Kelvin** in real-time.
 
-## 🚀 Live Demo
-
-🔗  Try it live now:- [TEMPERATURE-CONVERTOR](https://innovativesumit.github.io/TEMPERATURE-CONVERTORS/)
-
-## 📸 Screenshots
-
-Here's a preview of the site:
-
-<p align="center">  <img src="https://github.com/user-attachments/assets/25935757-485e-4c80-9ea3-9ab82de82d0b" alt="Screenshot 1" width="420" height="420" /> </p>
-<p align="center">  <img src="https://github.com/user-attachments/assets/296b4b81-cf36-4055-b136-012cb736c742" alt="Screenshot 2" width="420" height="520" /> </p>
-
 ## 🔥 Features
 
 ✅ Convert temperature between Celsius, Fahrenheit, and Kelvin  
