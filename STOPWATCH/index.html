@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Stopwatch by Sumit</title>
+    <link rel="stylesheet" href="STOPWATCH.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Montserrat:wght@300;400;600&family=Teko:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="stopwatch">
+            <div class="time-display" id="displayTime">00:00:00</div>
+            <div class="controls">
+                <button class="btn" id="startBtn">
+                    <i class="fas fa-play"></i>
+                </button>
+                <button class="btn" id="stopBtn">
+                    <i class="fas fa-pause"></i>
+                </button>
+                <button class="btn" id="resetBtn">
+                    <i class="fas fa-redo"></i>
+                </button>
+                <button class="btn" id="lapBtn">
+                    <i class="fas fa-flag"></i>
+                </button>
+            </div>
+            <div class="laps" id="lapsContainer"></div>
+        </div>
+        
+        <div class="creator-info">
+            <div class="name">Sumit</div>
+            <a href="https://sumit-portfolio-green.vercel.app/" class="portfolio-btn" id="portfolioBtn" target="_blank">
+                View Portfolio
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+    <script src="STOPWATCH.js"></script>
+</body>
+</html>
