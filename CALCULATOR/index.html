@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Sumit</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+    <link rel="icon" type="image/png" href="LOGO4.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="calculator-header">
+                <span class="calculator-title">SUMIT'S CALCULATOR</span>
+                <button class="theme-toggle" id="themeToggle">Dark Mode</button>
+            </div>
+            
+            <div class="display">
+                <div class="previous-operation" id="previousOperation"></div>
+                <input type="text" id="display" readonly>
+            </div>
+            
+            <div class="buttons-grid">
+                <button class="btn btn-clear" onclick="clearDisplay()">AC</button>
+                <button class="btn btn-delete" onclick="deleteLastChar()">DEL</button>
+                <button class="btn btn-operator" onclick="percentage()">%</button>
+                <button class="btn btn-operator" onclick="appendOperator('/')">/</button>
+                
+                <button class="btn" onclick="appendNumber('7')">7</button>
+                <button class="btn" onclick="appendNumber('8')">8</button>
+                <button class="btn" onclick="appendNumber('9')">9</button>
+                <button class="btn btn-operator" onclick="appendOperator('*')">×</button>
+                
+                <button class="btn" onclick="appendNumber('4')">4</button>
+                <button class="btn" onclick="appendNumber('5')">5</button>
+                <button class="btn" onclick="appendNumber('6')">6</button>
+                <button class="btn btn-operator" onclick="appendOperator('-')">-</button>
+                
+                <button class="btn" onclick="appendNumber('1')">1</button>
+                <button class="btn" onclick="appendNumber('2')">2</button>
+                <button class="btn" onclick="appendNumber('3')">3</button>
+                <button class="btn btn-operator" onclick="appendOperator('+')">+</button>
+                
+                <button class="btn" onclick="appendNumber('0')">0</button>
+                <button class="btn" onclick="appendNumber('.')">.</button>
+                <button class="btn btn-equal" onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+
+    <a href="https://innovativesumit.github.io/SUMIT-S-PORTFOLIO-1ST-YEAR/" class="portfolio-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+        </svg>
+        MY PORTFOLIO
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
