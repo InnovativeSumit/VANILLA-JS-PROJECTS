@@ -1,4 +1,4 @@
-# 👶 Tap-Baby Game by Sumit
+# 👶 PRPOSAL GamE by Sumit
 
 A **fun and addictive tapping game** built with **HTML, CSS, and JavaScript**. Test your reflexes as you tap the baby to make it laugh and score points before time runs out!
 
