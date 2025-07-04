@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHITEBOARD MADE BY SUMIT</title>
+    <link rel="stylesheet" href="WHITEBOARD.css">
+    <link rel="icon" type="image/png" href="image.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <h1>A BEAUTIFUL WHITEBOARD BY SUMIT</h1>
+    <div class="controls">
+        <div class="colors">
+            <div class="color black" data-color="#000000"></div>
+            <div class="color red" data-color="#ff0000"></div>
+            <div class="color blue" data-color="#0000ff"></div>
+            <div class="color green" data-color="#00ff00"></div>
+            <div class="color yellow" data-color="#ffff00"></div>
+            <div class="color purple" data-color="#800080"></div>
+        </div>
+        <div class="tools">
+            <button id="eraser" title="Eraser"><i class="fas fa-eraser"></i></button>
+            <button id="clear" title="Clear All"><i class="fas fa-trash-alt"></i></button>
+            <input type="range" id="brush-size" min="1" max="20" value="2" title="Brush Size">
+        </div>
+    </div>
+    <canvas id="canvas" width="800" height="500"></canvas>
+    <div class="footer">
+        <a href="https://sumit-portfolio-green.vercel.app/" class="portfolio-btn" target="_blank">Visit My Portfolio</a>
+    </div>
+    <script src="WHITEBOARD.JS"></script>
+</body>
+</html>

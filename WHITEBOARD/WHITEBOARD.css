@@ -1,0 +1,124 @@
+body {
+    background-image: url('https://images.unsplash.com/photo-1531315630201-bb15abeb1653?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+h1 {
+    margin-top: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.colors {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.color {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.color:hover {
+    transform: scale(1.2);
+}
+
+.black { background-color: #000000; }
+.red { background-color: #ff0000; }
+.blue { background-color: #0000ff; }
+.green { background-color: #00ff00; }
+.yellow { background-color: #ffff00; }
+.purple { background-color: #800080; }
+
+.tools {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.tools button {
+    background: #4a4a4a;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.tools button:hover {
+    background: #2a2a2a;
+    transform: translateY(-2px);
+}
+
+.tools button.active {
+    background: #ff0000;
+    transform: scale(1.1);
+}
+
+canvas {
+    border: 5px solid #4a4a4a;
+    cursor: crosshair;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+.footer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.portfolio-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #4a4a4a, #2a2a2a);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+    border: 2px solid white;
+}
+
+.portfolio-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(45deg, #2a2a2a, #4a4a4a);
+}
+
+#brush-size {
+    width: 100px;
+    cursor: pointer;
+}
