@@ -1,0 +1,103 @@
+<!-- MAKE BY SUMIT PAL -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PASSWORD VAULT</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-lock"></i> PASSWORD VAULT</h1>
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="add-btn" id="addBtn" data-tooltip="Add New Entry">
+                    <i class="fas fa-plus"></i>
+                </button>
+            </div>
+        </header>
+
+        <input type="text" class="search-bar" id="searchBar" placeholder="🔍 SEARCH ENTRIES...">
+
+        <div class="entries-list" id="entriesList">
+            <!-- Entries will be added here dynamically -->
+            <div class="no-entries" id="noEntries">
+                <i class="fas fa-key"></i>
+                <p>NO SAVED ENTRIES YET. CLICK '+' TO ADD ONE.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Entry Modal -->
+    <div class="modal" id="addModal">
+        <div class="modal-content">
+            <h2><i class="fas fa-plus-circle"></i> ADD NEW ENTRY </h2>
+            <form id="entryForm">
+                <div class="form-group">
+                    <label for="appName"><i class="fas fa-globe"></i> APP/WEBSITE NAME</label>
+                    <input type="text" id="appName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-user"></i> EMAIL/USERNAME</label>
+                    <input type="text" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password"><i class="fas fa-key"></i> PASSWORD</label>
+                    <div class="password-container">
+                        <input type="password" id="password" required>
+                        <span class="toggle-password" id="togglePassword"><i class="fas fa-eye"></i></span>
+                    </div>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="viewAfterSave">
+                    <label for="viewAfterSave">VIEW AFTER SAVE</label>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-secondary" id="cancelBtn">
+                        <i class="fas fa-times"></i> CANCEL
+                    </button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-save"></i> SAVE
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- View/Edit Modal -->
+    <div class="modal" id="viewModal">
+        <div class="modal-content">
+            <h2 id="viewTitle"><i class="fas fa-eye"></i> ENTRY DETAILS </h2>
+            <div class="form-group">
+                <label><i class="fas fa-globe"></i> APP/WEBSITE NAME </label>
+                <p id="viewAppName"></p>
+            </div>
+            <div class="form-group">
+                <label><i class="fas fa-user"></i> EMAIL/USERNAME </label>
+                <p id="viewEmail"></p>
+            </div>
+            <div class="form-group">
+                <label><i class="fas fa-key"></i> PASSWORD </label>
+                <div class="password-container">
+                    <input type="password" id="viewPassword" readonly>
+                    <span class="toggle-password" id="toggleViewPassword"><i class="fas fa-eye"></i></span>
+                </div>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-secondary" id="closeViewBtn">
+                    <i class="fas fa-times"></i> CLOSE
+                </button>
+                <button type="button" class="btn btn-primary" id="copyPasswordBtn">
+                    <i class="fas fa-copy"></i> COPY PASSWORD
+                </button>
+            </div>
+        </div>
+    </div>
+<script src="index.js" ></script>
+</body>
+</html>
