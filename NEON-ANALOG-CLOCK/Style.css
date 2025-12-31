@@ -1,0 +1,132 @@
+:root {
+      --bg: #000;
+      --tick-color: #0ff;
+      --number-color: #0ff;
+      --center-color: #0ff;
+      --hour-color: #ff00ff;
+      --minute-color: #00f0ff;
+      --second-color: #ffff00;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      transition: background 0.5s ease;
+    }
+
+    .clock {
+      width: 300px;
+      height: 300px;
+      border: 8px solid var(--tick-color);
+      border-radius: 50%;
+      position: relative;
+      box-shadow: 0 0 40px var(--tick-color);
+    }
+
+    .hand {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform-origin: left center;
+      transform: rotate(90deg);
+      border-radius: 2px;
+    }
+
+    .hand.hour {
+      width: 35%;
+      height: 4px;
+      background: var(--hour-color);
+      box-shadow: 0 0 10px var(--hour-color), 0 0 25px var(--hour-color);
+    }
+
+    .hand.minute {
+      width: 45%;
+      height: 3px;
+      background: var(--minute-color);
+      box-shadow: 0 0 10px var(--minute-color), 0 0 25px var(--minute-color);
+    }
+
+    .hand.second {
+      width: 50%;
+      height: 2px;
+      background: var(--second-color);
+      box-shadow: 0 0 10px var(--second-color), 0 0 20px var(--second-color);
+    }
+
+    .center-dot {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      background: var(--center-color);
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 0 10px var(--center-color), 0 0 20px var(--center-color);
+    }
+
+    .number {
+      position: absolute;
+      color: var(--number-color);
+      font-size: 20px;
+      font-weight: bold;
+      text-shadow: 0 0 10px var(--number-color), 0 0 20px var(--number-color);
+      transform: translate(-50%, -50%);
+    }
+
+    .tick {
+      position: absolute;
+      width: 1px;
+      height: 10px; 
+      background: var(--tick-color);
+      top: 46.6%;
+      left: 50%;
+      transform-origin: center bottom;
+      box-shadow: 0 0 5px var(--tick-color);
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 8px 16px;
+      font-size: 14px;
+      border: none;
+      border-radius: 5px;
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      backdrop-filter: blur(4px);
+      cursor: pointer;
+      box-shadow: 0 0 10px #0ff;
+      transition: background 0.3s, box-shadow 0.3s;
+    }
+
+    button:hover {
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 0 15px #fff;
+    }
+
+    /* Theme: Cyberpunk */
+    .cyberpunk {
+      --bg: #110011;
+      --tick-color: #ff0;
+      --number-color: #f0f;
+      --center-color: #f0f;
+      --hour-color: #ff0;
+      --minute-color: #f0f;
+      --second-color: #0ff;
+    }
+
+    /* Theme: Dark */
+    .dark {
+      --bg: #111;
+      --tick-color: #888;
+      --number-color: #aaa;
+      --center-color: #ccc;
+      --hour-color: #ccc;
+      --minute-color: #bbb;
+      --second-color: #f33;
+    }
