@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hacher's Login Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Slider form above lamp -->
+  <form class="slider-form" oninput="body.setAttribute('data-light', slider.value)">
+    <div class="icon sun">
+      <div class="ray"></div>
+      <div class="ray"></div>
+      <div class="ray"></div>
+      <div class="ray"></div>
+      <div class="ray"></div>
+      <div class="ray"></div>
+      <div class="ray"></div>
+      <div class="ray"></div>
+    </div>
+    <input type="range" id="slider" value="0" min="0" max="10">
+  </form>
+
+  <!-- Lamp in the center -->
+  <div class="lamp-wrapper">
+    <div class="lamp-rope"></div>
+    <div class="lamp">
+      <div class="lamp-part -top">
+          <div class="lamp-part -top-part"></div>
+          <div class="lamp-part -top-part right"></div>
+      </div>
+      <div class="lamp-part -body"></div>
+      <div class="lamp-part -body right"></div>
+      <div class="lamp-part -bottom"></div>
+      <div class="blub"></div>
+    </div>
+    <div class="wall-light-shadow"></div>
+  </div>
+
+  <!-- Login form below lamp -->
+  <div class="login-form">
+    <h2>Welcome</h2>
+    <form onsubmit="handleLogin(event)">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" 
+        name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" 
+        name="password" required>
+      </div>
+      <button type="submit" class="login-btn">
+        Login</button>
+    </form>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
