@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>WiFi Card Generator</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.46/dist/themes/base.css">
+<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.46/dist/shoelace.js"></script>
+
+<header>
+  <h1>Connect to WiFi📶</h1>
+</header>
+
+<form>
+  <h2>WiFi Login</h2>
+  
+  <div class="internal">
+    <sl-qr-code size="164"></sl-qr-code>
+
+    <div>
+      <sl-input label="Network name" placeholder="WiFi network name"></sl-input>
+      <sl-input label="Password" placeholder="Password"></sl-input>
+    </div>
+  </div>
+  
+  <p>📸 Point your phone's camera at the QR code to connect to WiFi</p>
+</form>
+
+<footer>
+  <sl-button>Rotate Card</sl-button>
+  <sl-button type="primary">Print WiFi Card</sl-button>
+</footer>
+  <script  src="./script.js"></script>
+
+</body>
+</html>

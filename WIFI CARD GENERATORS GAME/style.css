@@ -1,0 +1,54 @@
+body {
+  font: 16px sans-serif; 
+  max-width: 675px;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+form {
+  border: dashed 2px var(--sl-color-gray-300);
+  padding: .5rem 2rem;
+}
+
+.internal {
+  display: grid;
+  grid-template-columns: 164px auto;
+  gap: 2rem;
+}
+
+sl-input::part(input) {
+  font-family: monospace; 
+}
+
+sl-input + sl-input {
+  margin-top: 1rem; 
+}
+
+sl-button {
+  margin-top: 1rem; 
+}
+
+
+.rotated {
+  max-width: 340px; 
+}
+
+.rotated h2 {
+  text-align: center; 
+}
+
+.rotated sl-qr-code {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rotated .internal {
+  grid-template-columns: auto; 
+}
+
+@media print {
+  header,
+  footer {
+    display: none; 
+  }
+}
